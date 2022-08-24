@@ -1,19 +1,19 @@
-# SEB39_PRE_029--team.이구와나
+# ***SEB39_PRE_029--team.이구와나***
 
 (프로젝트 설명)
 
-## Features
+## *Features*
 
 - (기능 설명)
 
-## Contributors
+## *Contributors*
 
 - FE: 
 - FE:
 - BE:
 - BE:
 
-## Project Wiki
+## *Project Wiki*
 
 프로젝트 팀 정보, 기획, 아키텍쳐에 대한 자세한 안내입니다.
 
