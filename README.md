@@ -1,6 +1,6 @@
 # ***SEB39_PRE_029--team.이구와나***
 
-(프로젝트 설명)
+StackOverFlow 클론코딩
 
 ## *Features*
 
@@ -8,10 +8,10 @@
 
 ## *Contributors*
 
-- FE: 
-- FE:
-- BE:
-- BE:
+- FE: 심의석
+- FE: 박태휘
+- BE: 이상수 (팀장)
+- BE: 정도윤
 
 ## *Project Wiki*
 
