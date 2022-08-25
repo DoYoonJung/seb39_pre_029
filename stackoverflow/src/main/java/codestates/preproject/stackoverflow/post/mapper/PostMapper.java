@@ -15,12 +15,12 @@ public interface PostMapper {
         Posts posts = new Posts();
         posts.setSubject(requestBody.getSubject());
         posts.setContent(requestBody.getContent());
-        posts.setTag(TagMap.sendTag(requestBody.getTag()));
+//        posts.setTag(TagMap.sendTag(requestBody.getTag()));
 
-        Member member = new Member();
-        member.setId(requestBody.getMemberId());
-
-        posts.setMember(member);
+//        Member member = new Member();
+//        member.setId(requestBody.getMemberId());
+//
+//        posts.setMember(member);
 
         return posts;
     }

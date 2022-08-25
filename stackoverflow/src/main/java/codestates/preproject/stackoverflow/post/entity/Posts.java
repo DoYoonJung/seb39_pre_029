@@ -1,6 +1,7 @@
 package codestates.preproject.stackoverflow.post.entity;
 
 
+import codestates.preproject.stackoverflow.comments.entity.Comments;
 import codestates.preproject.stackoverflow.member.entity.Member;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -28,8 +29,8 @@ public class Posts {
     @Column
     private String subject;
 
-    @Column
-    private List<String> tag;
+//    @Column
+//    private List<String> tag = new ArrayList<>();
 
     @Column
     private String content;
@@ -40,5 +41,13 @@ public class Posts {
     @Column(nullable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 
+    @OneToMany(mappedBy = "posts")
+    List<Comments> commentsList = new ArrayList<>();
 
+    public void addComments(Comments comments){
+        this.commentsList.add(comments);
+        if(comments.getPosts() != this){
+            comments.setPosts(this);
+        }
+    }
 }
