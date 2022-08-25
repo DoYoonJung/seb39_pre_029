@@ -1,4 +1,4 @@
-# ***SEB39_PRE_029--team.이구와나***
+# ***SEB39_PRE_029__team.이구와나***
 
 StackOverFlow 클론코딩
 
