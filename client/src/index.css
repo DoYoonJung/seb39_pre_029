@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+:root {
+  /* color */
+  --theme-orange: #f2740d;
+  --theme-ornage-light: #fee3cd;
+  --theme-blue: #0a95ff;
+  --theme-blue-light: #cde9fe;
+  --theme-button-blue: #e1ecf4;
+  --theme-gray: #32363a;
+  --theme-white: #ffffff;
+  --theme-background-gray: #f1f3f3;
+  --theme-selected-grey: #f1f2f3;
+  --theme-github-black: #2f3337;
+  --themm-checked-green: #48a868;
+
+  /* font color */
+  --font-color-black: #232629;
+  --font-color-gray: #525960;
+  --font-color-white: #ffffff;
+  --font-color-teal: #39739d;
+  --font-color-blue: #0074cc;
+  --font-color-green: #3d8f58;
+
+  /* size */
+  --tiny-font: 11px;
+  --small-font: 12px;
+  --normal-font: 13px; 
+  --text-font: 15px;
+  --content-font: 17px
+  --ad-font: 19px;
+  --header-font: 27px;
+  --name-font: 34px;
+  --banner-font: 55px;
+
+  /* font */
+  --serif:'Roboto Slab', serif;
+  --sans-serif:'Source Sans Pro', sans-serif;
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
