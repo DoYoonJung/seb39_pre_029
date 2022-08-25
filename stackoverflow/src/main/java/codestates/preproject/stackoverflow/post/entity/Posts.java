@@ -3,6 +3,7 @@ package codestates.preproject.stackoverflow.post.entity;
 
 import codestates.preproject.stackoverflow.comments.entity.Comments;
 import codestates.preproject.stackoverflow.member.entity.Member;
+import codestates.preproject.stackoverflow.tags.Tags;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -29,8 +30,10 @@ public class Posts {
     @Column
     private String subject;
 
-//    @Column
-//    private List<String> tag = new ArrayList<>();
+
+    @OneToMany(mappedBy = "posts",cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+    private List<Tags> tag;
+
 
     @Column
     private String content;
@@ -41,6 +44,12 @@ public class Posts {
     @Column(nullable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 
+
+    public void addTags(Tags tags) {
+        this.tag.add(tags);
+        if (tags.getPosts() != this) {
+            tags.setPosts(this);
+
     @OneToMany(mappedBy = "posts")
     List<Comments> commentsList = new ArrayList<>();
 
@@ -48,6 +57,7 @@ public class Posts {
         this.commentsList.add(comments);
         if(comments.getPosts() != this){
             comments.setPosts(this);
+
         }
     }
 }

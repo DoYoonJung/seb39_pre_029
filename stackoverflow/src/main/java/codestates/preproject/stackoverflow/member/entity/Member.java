@@ -1,8 +1,11 @@
 package codestates.preproject.stackoverflow.member.entity;
 
-import codestates.preproject.stackoverflow.comments.entity.Comments;
+
 import codestates.preproject.stackoverflow.post.entity.Posts;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -45,6 +48,7 @@ public class Member {
 
     @Column
     private Integer reputation;
+
 
 
     @OneToMany(mappedBy = "member")
